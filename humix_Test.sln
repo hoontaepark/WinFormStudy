@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.36001.139
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "humix_Test", "humix_Test\humix_Test.csproj", "{F5AE6F01-3C47-4EA3-841E-192A83A7C3C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "humix_content_test2", "humix_content_test2\humix_content_test2.csproj", "{53BC9299-B56D-4548-A8DF-DC1E6A859DDF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{13BE66E8-D424-4ADB-8CDD-E5FF3BB263AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5AE6F01-3C47-4EA3-841E-192A83A7C3C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5AE6F01-3C47-4EA3-841E-192A83A7C3C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5AE6F01-3C47-4EA3-841E-192A83A7C3C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5AE6F01-3C47-4EA3-841E-192A83A7C3C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53BC9299-B56D-4548-A8DF-DC1E6A859DDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53BC9299-B56D-4548-A8DF-DC1E6A859DDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53BC9299-B56D-4548-A8DF-DC1E6A859DDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53BC9299-B56D-4548-A8DF-DC1E6A859DDF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A928EEC-42A8-482D-9C89-D8AD40902F8F}
+	EndGlobalSection
+EndGlobal

@@ -90,13 +90,13 @@ namespace humix_content_test2
             {
                 MessageBox.Show("Save Complelte !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else
-            {
-                MessageBox.Show("Save Fail !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //else
+            //{
+            //    MessageBox.Show("Save Fail !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
         }
 
-        private string checkPwd (String pwd, String pwd2)
+        private string checkPwd                                                                                                                          (String pwd, String pwd2)
         {
             string checkpwd = pwd;
             string checkpwd2 = pwd2;
@@ -112,7 +112,7 @@ namespace humix_content_test2
                 return null;
             }else if(pwd != pwd2)
             {
-                MessageBox.Show("비밀번호가 다릅니다 !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("비밀번호가 다릅니다 !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return null;
             }
             else

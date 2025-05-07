@@ -81,14 +81,39 @@ namespace humix_content_test2
         {
             String pwd = textBox2.Text;
             String pwd2 = textBox3.Text;
+            Console.WriteLine(pwd);
+            Console.WriteLine(pwd2);
 
-            if(pwd == pwd2)
+            String checkOk = checkPwd(pwd, pwd2);
+
+            if (checkOk == "ok")
             {
                 MessageBox.Show("Save Complelte !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 MessageBox.Show("Save Fail !!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private String checkPwd (String pwd, String pwd2)
+        {
+            String checkpwd = pwd;
+            String checkpwd2 = pwd2;
+            String checkok = "ok";
+
+            if (pwd == null)
+            {
+                MessageBox.Show("Password에 비밀번호를 입력해주세요 !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }else if(pwd2 == null)
+            {
+                MessageBox.Show("Password Confirm에 비밀번호를 입력해주세요 !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }
+            else
+            {
+                return checkok;
             }
         }
     }

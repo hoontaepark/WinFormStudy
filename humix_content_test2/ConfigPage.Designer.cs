@@ -72,14 +72,14 @@
             this.panel15 = new System.Windows.Forms.Panel();
             this.label24 = new System.Windows.Forms.Label();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label26 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -591,45 +591,31 @@
             this.panel16.TabIndex = 24;
             this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.panelPaint);
             // 
-            // label26
+            // button3
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label26.Location = new System.Drawing.Point(293, 180);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(120, 12);
-            this.label26.TabIndex = 26;
-            this.label26.Text = "Password Setting";
-            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label26.UseWaitCursor = true;
+            this.button3.Location = new System.Drawing.Point(228, 90);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 24;
+            this.button3.Text = "Save";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // panel17
+            // textBox3
             // 
-            this.panel17.BackColor = System.Drawing.SystemColors.GrayText;
-            this.panel17.Location = new System.Drawing.Point(14, 18);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(12, 13);
-            this.panel17.TabIndex = 2;
+            this.textBox3.Location = new System.Drawing.Point(202, 53);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.PasswordChar = '*';
+            this.textBox3.Size = new System.Drawing.Size(105, 21);
+            this.textBox3.TabIndex = 25;
             // 
-            // panel18
+            // textBox2
             // 
-            this.panel18.BackColor = System.Drawing.SystemColors.GrayText;
-            this.panel18.Location = new System.Drawing.Point(14, 58);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(12, 13);
-            this.panel18.TabIndex = 3;
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label27.Location = new System.Drawing.Point(39, 19);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(80, 12);
-            this.label27.TabIndex = 20;
-            this.label27.Text = "Password :";
-            this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label27.UseWaitCursor = true;
+            this.textBox2.Location = new System.Drawing.Point(202, 13);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
+            this.textBox2.Size = new System.Drawing.Size(105, 21);
+            this.textBox2.TabIndex = 24;
             // 
             // label28
             // 
@@ -643,29 +629,45 @@
             this.label28.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.label28.UseWaitCursor = true;
             // 
-            // textBox2
+            // label27
             // 
-            this.textBox2.Location = new System.Drawing.Point(202, 13);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(105, 21);
-            this.textBox2.TabIndex = 24;
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label27.Location = new System.Drawing.Point(39, 19);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(80, 12);
+            this.label27.TabIndex = 20;
+            this.label27.Text = "Password :";
+            this.label27.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label27.UseWaitCursor = true;
             // 
-            // textBox3
+            // panel18
             // 
-            this.textBox3.Location = new System.Drawing.Point(202, 53);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(105, 21);
-            this.textBox3.TabIndex = 25;
+            this.panel18.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel18.Location = new System.Drawing.Point(14, 58);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(12, 13);
+            this.panel18.TabIndex = 3;
             // 
-            // button3
+            // panel17
             // 
-            this.button3.Location = new System.Drawing.Point(228, 90);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 24;
-            this.button3.Text = "Save";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.panel17.BackColor = System.Drawing.SystemColors.GrayText;
+            this.panel17.Location = new System.Drawing.Point(14, 18);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(12, 13);
+            this.panel17.TabIndex = 2;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.label26.Location = new System.Drawing.Point(293, 180);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(120, 12);
+            this.label26.TabIndex = 26;
+            this.label26.Text = "Password Setting";
+            this.label26.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label26.UseWaitCursor = true;
             // 
             // ConfigPage
             // 

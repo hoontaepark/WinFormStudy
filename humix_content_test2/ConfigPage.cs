@@ -79,8 +79,8 @@ namespace humix_content_test2
 
         private void button3_Click(object sender, EventArgs e)
         {
-            String pwd = textBox2.Text;
-            String pwd2 = textBox3.Text;
+            string pwd = textBox2.Text;
+            string pwd2 = textBox3.Text;
             Console.WriteLine(pwd);
             Console.WriteLine(pwd2);
 
@@ -96,17 +96,17 @@ namespace humix_content_test2
             }
         }
 
-        private String checkPwd (String pwd, String pwd2)
+        private string checkPwd (String pwd, String pwd2)
         {
-            String checkpwd = pwd;
-            String checkpwd2 = pwd2;
-            String checkok = "ok";
+            string checkpwd = pwd;
+            string checkpwd2 = pwd2;
+            string checkok = "ok";
 
-            if (pwd == null)
+            if (string.IsNullOrEmpty(pwd))
             {
                 MessageBox.Show("Password에 비밀번호를 입력해주세요 !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return null;
-            }else if(pwd2 == null)
+            }else if(string.IsNullOrEmpty(pwd2))
             {
                 MessageBox.Show("Password Confirm에 비밀번호를 입력해주세요 !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return null;

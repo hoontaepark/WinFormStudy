@@ -86,7 +86,7 @@ namespace humix_content_test2
 
             String checkOk = checkPwd(pwd, pwd2);
 
-            if (checkOk == "ok")
+            if (checkOk != null)
             {
                 MessageBox.Show("Save Complelte !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
@@ -109,6 +109,10 @@ namespace humix_content_test2
             }else if(string.IsNullOrEmpty(pwd2))
             {
                 MessageBox.Show("Password Confirm에 비밀번호를 입력해주세요 !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return null;
+            }else if(pwd != pwd2)
+            {
+                MessageBox.Show("비밀번호가 다릅니다 !!!", "information", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return null;
             }
             else

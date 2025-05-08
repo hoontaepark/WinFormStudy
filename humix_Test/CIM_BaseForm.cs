@@ -15,6 +15,7 @@ namespace humix_Test
     {
         MainPage mainPage = new MainPage();
         ConfigPage configPage = new ConfigPage();
+        Alarm_ListPage alarmlistPage = new Alarm_ListPage();
         public CIM_BaseForm()
         {
             InitializeComponent();

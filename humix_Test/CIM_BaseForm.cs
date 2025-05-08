@@ -64,7 +64,7 @@ namespace humix_Test
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            LoadContent(alarmlistPage);
         }
     }
 }

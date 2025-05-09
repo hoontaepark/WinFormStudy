@@ -61,6 +61,12 @@
     <Compile Include="ConfigPage.Designer.cs">
       <DependentUpon>ConfigPage.cs</DependentUpon>
     </Compile>
+    <Compile Include="LogViewPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LogViewPage.Designer.cs">
+      <DependentUpon>LogViewPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.cs">
       <SubType>UserControl</SubType>
     </Compile>

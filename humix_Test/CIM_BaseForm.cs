@@ -16,6 +16,7 @@ namespace humix_Test
         MainPage mainPage = new MainPage();
         ConfigPage configPage = new ConfigPage();
         Alarm_ListPage alarmlistPage = new Alarm_ListPage();
+        LogViewPage logviewpage = new LogViewPage();
         public CIM_BaseForm()
         {
             InitializeComponent();
@@ -65,6 +66,11 @@ namespace humix_Test
         private void button3_Click(object sender, EventArgs e)
         {
             LoadContent(alarmlistPage);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            LoadContent(logviewpage);
         }
     }
 }

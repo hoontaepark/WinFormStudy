@@ -49,6 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Alarm_ListPage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Alarm_ListPage.Designer.cs">
+      <DependentUpon>Alarm_ListPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConfigPage.cs">
       <SubType>UserControl</SubType>
     </Compile>

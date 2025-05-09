@@ -96,7 +96,7 @@ namespace humix_content_test2
             //}
         }
 
-        private string checkPwd                                                                                                                          (String pwd, String pwd2)
+        private string checkPwd(String pwd, String pwd2)
         {
             string checkpwd = pwd;
             string checkpwd2 = pwd2;

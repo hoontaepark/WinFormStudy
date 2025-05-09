@@ -300,8 +300,9 @@
             // textBox4
             // 
             this.textBox4.Location = new System.Drawing.Point(19, 143);
+            this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(633, 21);
+            this.textBox4.Size = new System.Drawing.Size(633, 377);
             this.textBox4.TabIndex = 7;
             // 
             // LogViewPage

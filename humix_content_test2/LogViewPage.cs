@@ -30,6 +30,8 @@ namespace humix_content_test2
                     string[] txtFiles = Directory.GetFiles(dialog.SelectedPath, "*.txt");
                     textBox1.Text = folderPath;
 
+                    gridset(folderPath, txtFiles);
+
                     dataGridView2.Rows.Clear();
                     dataGridView2.Columns.Clear();
                     dataGridView2.Columns.Add("No", "No");
@@ -77,8 +79,31 @@ namespace humix_content_test2
             }
         }
 
-        private void gridset()
+        private void gridset(string folderPath, string[] txtFiles)
         {
+            dataGridView2.Rows.Clear();
+            dataGridView2.Columns.Clear();
+            dataGridView2.Columns.Add("No", "No");
+            dataGridView2.Columns.Add("File", "File");
+
+
+            for (int i = 0; i < txtFiles.Length; i++)
+            {
+                string fileName = Path.GetFileName(txtFiles[i]);
+                dataGridView2.Rows.Add(i + 1, fileName);
+            }
+
+            dataGridView2.Tag = folderPath;
+
+            if (txtFiles.Length > 0)
+            {
+                string fileContent = File.ReadAllText(txtFiles[0]);
+                textBox4.Text = fileContent;
+            }
+            else
+            {
+                textBox4.Text = "txt 파일이 존재하지않습니다.";
+            }
 
         }
         public void panelPaint(object sender, PaintEventArgs e)

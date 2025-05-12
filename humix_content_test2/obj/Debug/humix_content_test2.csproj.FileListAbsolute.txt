@@ -32,3 +32,4 @@ C:\Company\humix\humix_Test\humix_content_test2\obj\Debug\humix_content_test2.cs
 C:\Company\humix\humix_Test\humix_content_test2\obj\Debug\humix_content_test2.dll
 C:\Company\humix\humix_Test\humix_content_test2\obj\Debug\humix_content_test2.pdb
 C:\Company\humix\humix_Test\humix_content_test2\obj\Debug\humix_content_test2.savePop.resources
+C:\Company\humix\humix_Test\humix_content_test2\obj\Debug\humix_content_test2.LogViewPage.resources

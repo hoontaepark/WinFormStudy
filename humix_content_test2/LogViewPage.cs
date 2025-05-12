@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace humix_content_test2
 {
@@ -26,6 +27,19 @@ namespace humix_content_test2
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     textBox1.Text = dialog.SelectedPath;
+
+                    string[] txtFiles = Directory.GetFiles(dialog.SelectedPath, "*.txt");
+
+                    if (txtFiles.Length > 0)
+                    {
+                        string fileContent = File.ReadAllText(txtFiles[0]);
+                        textBox4.Text = fileContent;
+                    }
+                    else
+                    {
+                        textBox4.Text = "txt 파일이 존재하지않습니다.";
+                    }
+
                 }
             }
         }

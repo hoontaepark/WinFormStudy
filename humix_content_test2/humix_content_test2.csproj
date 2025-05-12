@@ -79,6 +79,9 @@
     <Compile Include="savePop.Designer.cs">
       <DependentUpon>savePop.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="LogViewPage.resx">
+      <DependentUpon>LogViewPage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="savePop.resx">
       <DependentUpon>savePop.cs</DependentUpon>
     </EmbeddedResource>

@@ -42,6 +42,7 @@ namespace humix_content_test2
                         dataGridView2.Rows.Add(i + 1, fileName);
                     }
 
+                    dataGridView2.Tag = folderPath;
 
                     if (txtFiles.Length > 0)
                     {
@@ -53,6 +54,25 @@ namespace humix_content_test2
                         textBox4.Text = "txt 파일이 존재하지않습니다.";
                     }
 
+                }
+            }
+        }
+
+        private void dataGridView2_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                string fileName = dataGridView2.Rows[e.RowIndex].Cells["File"].Value.ToString();
+                string folderPath = dataGridView2.Tag as string;
+
+                if (!string.IsNullOrEmpty(folderPath))
+                {
+                    string fullPath = Path.Combine(folderPath, fileName);
+
+                    if (File.Exists(fullPath))
+                    {
+                        textBox4.Text = File.ReadAllText(fullPath);
+                    }
                 }
             }
         }

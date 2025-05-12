@@ -26,9 +26,22 @@ namespace humix_content_test2
 
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
-                    textBox1.Text = dialog.SelectedPath;
-
+                    string folderPath = dialog.SelectedPath;
                     string[] txtFiles = Directory.GetFiles(dialog.SelectedPath, "*.txt");
+                    textBox1.Text = folderPath;
+
+                    dataGridView2.Rows.Clear();
+                    dataGridView2.Columns.Clear();
+                    dataGridView2.Columns.Add("No", "No");
+                    dataGridView2.Columns.Add("File", "File");
+
+
+                    for (int i = 0; i < txtFiles.Length; i++)
+                    {
+                        string fileName = Path.GetFileName(txtFiles[i]);
+                        dataGridView2.Rows.Add(i + 1, fileName);
+                    }
+
 
                     if (txtFiles.Length > 0)
                     {
@@ -42,6 +55,11 @@ namespace humix_content_test2
 
                 }
             }
+        }
+
+        private void gridset()
+        {
+
         }
         public void panelPaint(object sender, PaintEventArgs e)
         {

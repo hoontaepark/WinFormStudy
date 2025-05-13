@@ -105,7 +105,10 @@ namespace humix_content_test2
             if (dataGridView2.CurrentRow != null)
             {
                 string fileName = dataGridView2.CurrentRow.Cells["File"].Value.ToString();
-                string folderPath = dataGridView2.CurrentRow.Tag as String;
+                string folderPath = dataGridView2.Tag as String;
+
+                Console.WriteLine("filename =" + fileName);
+                Console.WriteLine("folderPath = " + folderPath);
 
                 if (!string.IsNullOrEmpty(folderPath) && !string.IsNullOrEmpty(fileName))
                 {

@@ -109,8 +109,17 @@ namespace humix_content_test2
 
                 if (!string.IsNullOrEmpty(folderPath) && !string.IsNullOrEmpty(fileName))
                 {
-
+                    string fullPath = Path.Combine(folderPath, fileName);
+                    textBox3.Text = fullPath;
                 }
+                else
+                {
+                    MessageBox.Show("파일 경로나 파일명이 유효하지 않습니다.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("파일을 선택해 주세요", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
         }

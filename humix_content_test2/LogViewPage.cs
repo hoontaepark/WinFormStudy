@@ -100,6 +100,21 @@ namespace humix_content_test2
             }
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (dataGridView2.CurrentRow != null)
+            {
+                string fileName = dataGridView2.CurrentRow.Cells["File"].Value.ToString();
+                string folderPath = dataGridView2.CurrentRow.Tag as String;
+
+                if (!string.IsNullOrEmpty(folderPath) && !string.IsNullOrEmpty(fileName))
+                {
+
+                }
+            }
+
+        }
+
 
     }
 }
